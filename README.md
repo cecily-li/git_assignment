@@ -22,6 +22,7 @@ f. What does git diff do?
 git diff allows the user to track changes between files. It indicates the line number which was changed as well as a change summary for what content was changed.
 
 g. What is the main branch?
-
+Main branch is the default branch of the repository. It is the first branch displayed in the repository and changes made to side branches can be committed to the main branch later on. This practice allows the main branch to function as the standalone source in case the functionality in uncommitted code goes awry on a separate branch. 
 
 h. Besides our initial commit if it is a new repository, should we directly push our changes directly into the main branch?
+Best practice is to commit changes to a side branch so that if something goes wrong, you can come back to the unchanged main branch and try again without losing your initial starting point. Changes are also easier to track and when collaborating, committing to other branches before merging to the main branch allows for easier code review.
